@@ -2,7 +2,9 @@
 import './js/'
 
 // CSS
-import './assets/css/main.css'
+import './assets/css/app.base.css'
+import './assets/css/app.components.css'
+import './assets/css/app.utilities.css'
 
 // Vue.js
 window.Vue = require('vue')
