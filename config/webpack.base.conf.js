@@ -65,22 +65,6 @@ module.exports = {
         loader: 'vue-loader',
       },
       {
-        // Fonts
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
-        }
-      },
-      {
-        // Images / Icons
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
-        }
-      },
-      {
         // CSS
         test: /\.css$/,
         use: [
@@ -98,7 +82,23 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        // Fonts
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      },
+      {
+        // Images / Icons
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      },
     ]
   },
   resolve: {
